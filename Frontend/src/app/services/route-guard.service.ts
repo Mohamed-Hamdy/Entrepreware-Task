@@ -42,7 +42,7 @@ export class RouteGuardService {
         }
         
         this.snackbarService.openSnackBar(GlobalConstants.unauthroized , GlobalConstants.error);
-        this.router.navigate(['/cafe/dashboard']);
+        this.router.navigate(['/coligo/DashboardContent']);
         return false;
       }
       else{

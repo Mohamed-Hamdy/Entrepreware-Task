@@ -17,7 +17,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { SignupComponent } from './signup/signup.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
 import { TokenInterceptorInterceptor } from './services/token-interceptor.interceptor';
 //import { NgxUiLoaderConfig, NgxUiLoaderModule , SPINNER} from 'ngx-ui-loader';
@@ -45,7 +44,6 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig={
     AppHeaderComponent,
     AppSidebarComponent,
     SignupComponent,
-    ForgotPasswordComponent,
     LoginComponent
    ],
   imports: [

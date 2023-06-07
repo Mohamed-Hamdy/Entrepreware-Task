@@ -7,12 +7,12 @@ import { RouteGuardService } from './services/route-guard.service';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'cafe',
+    path: 'coligo',
     component: FullComponent,
     children: [
       {
         path: '',
-        redirectTo: '/cafe/dashboard',
+        redirectTo: '/coligo/dashboard',
         pathMatch: 'full',
       },
       {

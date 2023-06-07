@@ -9,12 +9,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialRoutes } from './material.routing';
 import { MaterialModule } from '../shared/material-module';
-import { ConfirmationComponent } from './dialog/view-bill-products/confirmation/confirmation.component';
-import { ChangePasswordComponent } from './dialog/view-bill-products/change-password/change-password.component';
-import { ManageQuizComponent } from './manage-quiz/manage-quiz.component';
-import { QuizComponent } from './dialog/view-bill-products/quiz/quiz.component';
-import { ManageProductComponent } from './manage-product/manage-product.component';
-import { ProductComponent } from './dialog/view-bill-products/product/product.component';
+import { ConfirmationComponent } from './dialog/confirmation/confirmation.component';
+import { ChangePasswordComponent } from './dialog/change-password/change-password.component';
+import { ManageDashboardContentComponent } from './manage-dashboardcontent/manage-dashboardcontent.component';
+import { DashboardContentComponent } from './dialog/dashboardcontent/dashboardcontent.component';
 import { ManageUserComponent } from './manage-user/manage-user.component';
 
 @NgModule({
@@ -32,11 +30,9 @@ import { ManageUserComponent } from './manage-user/manage-user.component';
   declarations: [
     ConfirmationComponent,
     ChangePasswordComponent,
-    ManageQuizComponent,
-    QuizComponent,
-    ManageProductComponent,
-    ProductComponent,
-    ManageUserComponent
+    ManageDashboardContentComponent,
+    ManageUserComponent,
+    DashboardContentComponent
   ]
 })
 export class MaterialComponentsModule {}

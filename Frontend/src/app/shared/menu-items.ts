@@ -10,7 +10,7 @@ export interface Menu{
 }
 
 const MENUITEMS = [
-    {state:'category' , name:'Dashboard', type:'link', icon:'dashboard', role:''},
+    {state:'DashboardContent' , name:'Dashboard', type:'link', icon:'dashboard', role:''},
     //{state:'category' , name:'Manage Quizzes', type:'link', icon:'category', role:'admin'},
     {state:'Schedule' , name:'Schedule', type:'link', icon:'schedule', role:''},
     {state:'Courses' , name:'Courses', type:'link', icon:'inventory_2', role:''},

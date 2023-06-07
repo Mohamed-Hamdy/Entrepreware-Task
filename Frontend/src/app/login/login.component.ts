@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
       this.dialogRef.close();
       localStorage.setItem('token' , response.token);
       //alert("Successfully Login");
-      this.router.navigate(['/cafe/category']);
+      this.router.navigate(['/coligo/DashboardContent']);
     },(error: { error: { message: any; }; })=>{
       //this.ngxService.stop();
       if(error.error?.message){
