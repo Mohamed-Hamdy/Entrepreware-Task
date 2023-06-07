@@ -1,0 +1,611 @@
+{
+	"info": {
+		"_postman_id": "d45acfde-c0dd-4e8c-92fb-e3f54b8f340d",
+		"name": "Coligo Entrepreware Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19802068"
+	},
+	"item": [
+		{
+			"name": "localhost:8081/user/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"mohamed1\" , \"contactNumber\":\"2222\" , \"email\": \"mohamed547754@mailinator.com\" , \"password\":\"5555\"} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/product/updateProductStatus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QG1haWxpbmF0b3IuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjcyMzU1Mjc3LCJpYXQiOjE2NzIzMTkyNzd9.65gJ4qO4l_YnmuxrSf4-FmQ425iXwUZb1_bNedCGA0c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"19\" , \"isavailable\":\"false\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/product/updateProductStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"updateProductStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"mohamed547754@gmail.com\" , \"password\":\"20170227\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/user/get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user/get",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/user/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"5\" , \"status\":\"true\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/user/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/user/changePassword",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"oldPassword\":\"20170227\" , \"newPassword\":\"5555\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/user/changePassword",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/user/forgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"mohamed547754@mailinator.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/user/forgetPassword",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"forgetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/quiz/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"instructor\":\"instructor1\" , \"course_name\":\"Arabic\" , \"course_code\": \"Arab102\" , \"topic\":\"Arabic 2 Quiz\", \"description\":\"description description description\" , \"deadline\":\"Mon at 6 pm\"} \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/quiz/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/quiz/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/quiz/get",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/quiz/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"8\" , \"instructor\":\"Mohamed Ahamd\" ,  \"course_name\":\"Math Course\" , \"course_code\":\"Math 101\" , \"topic\":\"test topic\",  \"description\":\"description description\",  \"deadline\":\"Sat at 10 AM\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/quiz/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/quiz/getQuizById/8",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/quiz/getQuizById/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"getQuizById",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/announcement/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"instructor\":\"Ins 1\" , \"course_name\":\"course 1 \" , \"course_code\":\"Arabic 101\" , \"description\":\"description\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/announcement/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"announcement",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/announcement/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/announcement/get",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"announcement",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/announcement/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\" : \"18\" , \"instructor\":\"Ins 2\" , \"course_name\":\"course 1 \" , \"course_code\":\"Arabic 101\" , \"description\":\"description\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/announcement/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"announcement",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/announcement/delete/20",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/announcement/delete/18",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"announcement",
+						"delete",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/announcement/getAnnouncementById/23",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/announcement/getAnnouncementById/19",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"announcement",
+						"getAnnouncementById",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/dashboard/details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbWVkNTQ3NzU0QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NjA4NDY2NSwiaWF0IjoxNjg2MDQ4NjY1fQ.VmGXEOOZMRoA9s7rTdlLE4Le7-vdvfQ4hLxFskdQo9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/dashboard/details",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"dashboard",
+						"details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
