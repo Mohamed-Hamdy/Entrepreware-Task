@@ -7,7 +7,9 @@
 
 1- create DB from DB.sql file
 
-2- run intellij project then call <u>localhost:8081</u> or test with postman tool
+2- Go inside Backend Folder using `cd Backend`
+
+3- run intellij project then call <u>localhost:8081</u> or test with postman tool
 
 Note: you can see postman test cases from <u>Coligo Entrepreware Task.postman_collection.json</u>
 
